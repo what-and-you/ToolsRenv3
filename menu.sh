@@ -1,4 +1,6 @@
 clear
+echo "Tekan Enter untuk melanjutkan..."
+read -p ""
 git pull
 clear
 sleep 1
