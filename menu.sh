@@ -3,11 +3,6 @@ echo "Tekan Enter untuk melanjutkan..."
 read -p ""
 git pull
 clear
-# Get the current username
-read -p" CURRENT_USER=$(whoami)"
-# Greet the user by name
-echo "Selamat datang, $CURRENT_USER!"
-read -p" "
 sleep 1
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
@@ -19,20 +14,14 @@ echo
 echo
 echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳2̳"
 echo -e "                            By: REN9999��☕"
+
+
 # Get the current date and time
-CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
-
-# Get the system uptime
-UPTIME=$(uptime -s)
-
-# Get the number of logged in users
-LOGGED_IN_USERS=$(who | wc -l)
-
-# Display the information
-echo "Current Date and Time: $CURRENT_DATE"
-echo "System Uptime: $UPTIME"
-echo "Number of Logged In Users: $LOGGED_IN_USERS"
-echo -e "\x1B[92m
+||==================================================||
+CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
+# Display the formatted date and time
+echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
+||==================================================||
 ||=======================================||
 ||        WELCOME TO TOOLSRENv2          ||
 ||=======================================||
