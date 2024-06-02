@@ -18,6 +18,14 @@ echo "Anda telah menekan Enter. Script dilanjutkan..."
 sleep 3
 # Perform additional actions here (if any)
 # ...
+text="This is text displayed one character at a time!"
+
+for (( i=0; i < ${#text}; i++ )); do
+  echo -n "${text:i:1}"
+  sleep 0.1 # Adjust delay for desired speed
+done
+
+echo  # Print a newline at the end
 clear
 echo "sedang memeriksa update"
 sleep 3
