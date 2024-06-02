@@ -26,13 +26,6 @@ git pull
 sleep 3
 clear
 
-text="This is text displayed one character at a time!"
-
-for (( i=0; i < ${#text}; i++ )); do
-  echo -n "${text:i:1}"
-  sleep 0.1s# Adjust delay for desired speed
-done
-
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
