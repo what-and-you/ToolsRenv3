@@ -20,7 +20,8 @@ sleep 3
 # ...
 clear
 echo "sedang memeriksa update"
-sleep 4
+sleep 3
+clear
 git pull
 sleep 3
 clear
@@ -29,37 +30,9 @@ text="This is text displayed one character at a time!"
 
 for (( i=0; i < ${#text}; i++ )); do
   echo -n "${text:i:1}"
-  sleep 0.5s# Adjust delay for desired speed
+  sleep 0.1s# Adjust delay for desired speed
 done
 
-echo  # Print a newline at the end
-echo
-clear
-# Retrieve current user's Termux ID
-current_id=$(id -u)
-
-# Read authorized IDs from file
-authorized_ids=$(cat authorized_ids.txt)
-
-# Check if current ID is in the authorized list
-is_authorized=false
-for authorized_id in $authorized_ids; do
-  if [[ "$current_id" == "$authorized_id" ]]; then
-    is_authorized=true
-    break
-  fi
-done
-
-# Handle authorization status
-if [[ $is_authorized == true ]]; then
-  # Authorized user, proceed with script functionality
-  echo "Authorized user, executing script..."
-  # Your script logic goes here
-else
-  # Unauthorized user, display error and exit
-  echo "Unauthorized access. Script execution denied."
-  exit 1
-fi
 sleep 3
 clear
 sleep 2
