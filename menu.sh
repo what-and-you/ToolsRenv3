@@ -73,12 +73,10 @@ echo "
 ||FOLLOW                                 ||
 ||< bug> laporkan bug                    ||
 ||< 0 > EXIT                             ||
-||< info > info update                   ||"
-||=======================================||
-# Get the current date and time
+||< info > info update                   ||
+||=======================================||"
 echo "||=======================================||"
 CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
-# Display the formatted date and time
 echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
 echo "||=======================================||"
 echo
