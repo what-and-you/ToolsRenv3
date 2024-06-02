@@ -23,19 +23,25 @@ git pull
 sleep 5
 clear
 # Text to print slowly
-text="SELAMAT DATANG DI TOOLSRENV2"
+# Get the text to display
+text="Halo, Dunia!"
 
-# Loop through each character in the text
-for char in "${text[@]}"; do
-  # Print the character
-  echo -n "$char"
+# Initialize a variable to track the remaining characters
+remaining_chars="$text"
 
-  # Delay between characters (adjust as desired)
-  sleep 0.1
+# Display each character one by one
+while [ -n "$remaining_chars" ]; do
+  # Extract the first character
+  current_char="${remaining_chars:0:1}"
+
+  # Print the current character
+  printf "%c" "$current_char"
+
+  # Remove the first character from the remaining characters
+  remaining_chars="${remaining_chars:1}"
 done
 
-# Print a newline after the text
-echo
+echo # Print a newline at the end
 clear
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
