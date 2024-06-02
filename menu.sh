@@ -23,7 +23,7 @@ echo -e "\x1B[92m
 ||3.spam otp no stop V3 <off>            ||
 ||4.spam otp no stop V4                  ||
 ||5.spam otp no stop V5                  ||
-||6.spam otp no stop V6                  ||
+||6.spam otp no stop V6√                 ||
 ||7.spam otp no stop V7                  ||
 ||8.spam otp no stop V8                  ||
 ||9.spam otp no stop V9                  ||
