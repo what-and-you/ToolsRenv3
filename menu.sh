@@ -19,8 +19,8 @@ sleep 5
 # Perform additional actions here (if any)
 # ...
 clear
-sleep 5
 git pull
+sleep 5
 clear
 clear
 sleep 2
