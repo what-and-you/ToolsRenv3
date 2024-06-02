@@ -12,8 +12,14 @@ while true; do
   fi
 done
 
-# Continue script execution after Enter is pressed
+# Introduce a 5-second delay
+sleep 5
+
+# Continue script execution after 5 seconds
 echo "Anda telah menekan Enter. Script dilanjutkan..."
+
+# Perform additional actions here (if any)
+# ...
 clear
 git pull
 clear
