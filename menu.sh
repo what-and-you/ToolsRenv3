@@ -19,6 +19,8 @@ sleep 3
 # Perform additional actions here (if any)
 # ...
 clear
+echo "sedang memeriksa update"
+sleep 4
 git pull
 sleep 3
 clear
