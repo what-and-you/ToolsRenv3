@@ -4,6 +4,7 @@ while true; do
   # Display message and prompt for input
   echo "Tekan Enter untuk melanjutkan..."
   read -r -p ""
+  sleep 2
 
   # Check if the user pressed Enter
   if [[ $REPLY == "" ]]; then
@@ -11,9 +12,6 @@ while true; do
     break
   fi
 done
-
-# Introduce a 5-second delay
-sleep 5
 
 # Continue script execution after 5 seconds
 echo "Anda telah menekan Enter. Script dilanjutkan..."
