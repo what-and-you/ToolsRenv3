@@ -73,15 +73,14 @@ echo "
 ||FOLLOW                                 ||
 ||< bug> laporkan bug                    ||
 ||< 0 > EXIT                             ||
+||< info > info update                   ||"
+||=======================================||
 # Get the current date and time
 echo "||=======================================||"
 CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 # Display the formatted date and time
 echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
-echo "||==================================================||"
-||< info > info update                   ||
-||=======================================||
-"
+echo "||=======================================||"
 echo
 read -p "                PILIH MENU:" ren9999
 if [ $ren9999 == 1 ]
@@ -123,7 +122,7 @@ apt install git -y
 apt install python3-pip
 git clone https://github.com/FatihArridho/brutal.git
 cd brutal
-pip3 install -r install.txt
+pip3 insttill -r install.txt
 python3 brutal.py
 fi
 if [ $ren9999 == 5 ]
