@@ -3,6 +3,8 @@ echo "Tekan Enter untuk melanjutkan..."
 read -p ""
 git pull
 clear
+# Get the current username
+CURRENT_USER=$(whoami)
 sleep 1
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
@@ -14,6 +16,8 @@ echo
 echo
 echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳2̳"
 echo -e "                            By: REN9999��☕"
+# Greet the user by name
+echo "Selamat datang, $CURRENT_USER!"
 # Get the current date and time
 CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
 
