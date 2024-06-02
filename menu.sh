@@ -76,8 +76,16 @@ echo "\x1B[32m
 ||< info > info update                   ||
 ||=======================================||"
 echo "||=======================================||"
+# Get the current date and time
 CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
-echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
+
+# Extract the date and time components
+DATE=$(echo $CURRENT_DATE_TIME | cut -d" " -f1)
+TIME=$(echo $CURRENT_DATE_TIME | cut -d" " -f2)
+
+# Display the date and time separately
+echo "Tanggal: $DATE"
+echo "Waktu: $TIME"
 echo "||=======================================||"
 echo
 read -p "                PILIH MENU:" ren9999
