@@ -1,7 +1,41 @@
 clear
-echo "Tekan Enter untuk melanjutkan..."
-read -p ""
+# Continue loop until Enter is pressed
+while true; do
+  # Display message and prompt for input
+  echo "Tekan Enter untuk melanjutkan..."
+  read -r -p ""
+
+  # Check if the user pressed Enter
+  if [[ $REPLY == "" ]]; then
+    # Break out of the loop if Enter is pressed
+    break
+  fi
+done
+
+# Continue script execution after Enter is pressed
+echo "Anda telah menekan Enter. Script dilanjutkan..."
+clear
 git pull
+clear
+# Get the current hour
+current_hour=$(date +%H)
+
+# Choose greeting based on time of day
+if [ $current_hour -lt 12 ]; then
+  greeting="Selamat Pagi"
+elif [ $current_hour -le 16 ]; then
+  greeting="Selamat Siang"
+elif [ $current_hour -le 18 ]; then
+  greeting="Selamat Sore"
+else
+  greeting="Selamat Malam"
+fi
+
+# Get the current user's name
+current_user=$(whoami)
+
+# Display personalized greeting
+echo "$greeting, $current_user!"
 clear
 sleep 1
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
