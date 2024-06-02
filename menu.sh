@@ -22,22 +22,19 @@ clear
 git pull
 sleep 3
 clear
-# Get the text to animate
-text="Pesan yang ingin dianimasikan"
+#!/bin/bash
 
-# Loop through each character of the text
-for char in $(echo $text | sed -e 's/./& /g'); do
-  # Print the current character
+text="This is slow-motion text!"
+
+# Define delay between characters (adjust for desired speed)
+delay=0.1s
+
+for char in [[ "$text" ]]; do
   echo -n "$char"
-
-  # Sleep for a short delay (adjust as desired)
-  sleep 0.1
-
-  # Clear the cursor to the right of the current character
-  echo -ne "\r"
+  sleep "$delay"
 done
 
-# Print a newline at the end
+echo  # Print a newline at the end
 echo
 clear
 sleep 2
