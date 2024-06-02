@@ -17,12 +17,13 @@ sleep 5
 
 # Continue script execution after 5 seconds
 echo "Anda telah menekan Enter. Script dilanjutkan..."
-
+sleep 5
 # Perform additional actions here (if any)
 # ...
 clear
 git pull
 clear
+sleep 5
 # Get the current hour
 current_hour=$(date +%H)
 
@@ -30,25 +31,21 @@ current_hour=$(date +%H)
 sleep 5
 if [ $current_hour -lt 12 ]; then
   greeting="Selamat Pagi"
-  sleep 5
 elif [ $current_hour -le 16 ]; then
   greeting="Selamat Siang"
-  sleep 5
 elif [ $current_hour -le 18 ]; then
   greeting="Selamat Sore"
-  sleep 5
 else
   greeting="Selamat Malam"
-  sleep 5
 fi
-
+sleep 5
 # Get the current user's name
 current_user=$(whoami)
 
 # Display personalized greeting
 echo "$greeting, $current_user!"
 clear
-sleep 1
+sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
 echo -e   "\x1B[31m░░░██║░░░██║░░██║██║░░██║██║░░░░░╚█████╗░██████╔╝█████╗░░██╔██╗██║"
@@ -128,8 +125,8 @@ DATE=$(echo $CURRENT_DATE_TIME | cut -d" " -f1)
 TIME=$(echo $CURRENT_DATE_TIME | cut -d" " -f2)
 
 # Display the date and time separately
-echo "||[+]Tanggal: $DATE                  ||"
-echo "||[+]Waktu: $TIME                      ||"
+echo "||[+]Tanggal: $DATE                 ||"
+echo "||[+]Waktu: $TIME                     ||"
 echo "||=======================================||"
 echo
 read -p "                PILIH MENU:" ren9999
