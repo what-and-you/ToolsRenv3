@@ -23,27 +23,6 @@ sleep 5
 clear
 git pull
 clear
-sleep 5
-# Get the current hour
-current_hour=$(date +%H)
-
-# Choose greeting based on time of day
-sleep 5
-if [ $current_hour -lt 12 ]; then
-  greeting="Selamat Pagi"
-elif [ $current_hour -le 16 ]; then
-  greeting="Selamat Siang"
-elif [ $current_hour -le 18 ]; then
-  greeting="Selamat Sore"
-else
-  greeting="Selamat Malam"
-fi
-sleep 5
-# Get the current user's name
-current_user=$(whoami)
-
-# Display personalized greeting
-echo "$greeting, $current_user!"
 clear
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
