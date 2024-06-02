@@ -15,33 +15,30 @@ done
 
 # Continue script execution after 5 seconds
 echo "Anda telah menekan Enter. Script dilanjutkan..."
-sleep 5
+sleep 3
 # Perform additional actions here (if any)
 # ...
 clear
 git pull
-sleep 5
+sleep 3
 clear
-# Text to print slowly
-# Get the text to display
-text="Halo, Dunia!"
+# Get the text to animate
+text="Pesan yang ingin dianimasikan"
 
-# Initialize a variable to track the remaining characters
-remaining_chars="$text"
-
-# Display each character one by one
-while [ -n "$remaining_chars" ]; do
-  # Extract the first character
-  current_char="${remaining_chars:0:1}"
-
+# Loop through each character of the text
+for char in $(echo $text | sed -e 's/./& /g'); do
   # Print the current character
-  printf "%c" "$current_char"
+  echo -n "$char"
 
-  # Remove the first character from the remaining characters
-  remaining_chars="${remaining_chars:1}"
+  # Sleep for a short delay (adjust as desired)
+  sleep 0.1
+
+  # Clear the cursor to the right of the current character
+  echo -ne "\r"
 done
 
-echo # Print a newline at the end
+# Print a newline at the end
+echo
 clear
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
