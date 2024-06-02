@@ -27,7 +27,7 @@ clear
 text="This is slow-motion text!"
 
 # Define delay between characters (adjust for desired speed)
-delay=0.1s
+delay=3s
 
 for char in [[ "$text" ]]; do
   echo -n "$char"
