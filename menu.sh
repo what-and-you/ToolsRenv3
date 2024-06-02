@@ -4,14 +4,14 @@ while true; do
   # Display message and prompt for input
   echo "Tekan Enter untuk melanjutkan..."
   read -r -p ""
-
+  
   # Check if the user pressed Enter
   if [[ $REPLY == "" ]]; then
     # Break out of the loop if Enter is pressed
     break
   fi
 done
-
+sleep 3
 # Continue script execution after Enter is pressed
 echo "Anda telah menekan Enter. Script dilanjutkan..."
 sleep 3
