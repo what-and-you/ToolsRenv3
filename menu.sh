@@ -17,11 +17,13 @@ echo -e "                            By: REN9999��☕"
 
 
 # Get the current date and time
-||==================================================||
+echo "||==================================================||"
 CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 # Display the formatted date and time
 echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
-||==================================================||
+echo "||==================================================||"
+
+echo -e"
 ||=======================================||
 ||        WELCOME TO TOOLSRENv2          ||
 ||=======================================||
