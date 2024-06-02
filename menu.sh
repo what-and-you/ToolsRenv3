@@ -27,7 +27,7 @@ text="This is text displayed one character at a time!"
 
 for (( i=0; i < ${#text}; i++ )); do
   echo -n "${text:i:1}"
-  sleep 3 # Adjust delay for desired speed
+  sleep 1.5s# Adjust delay for desired speed
 done
 
 echo  # Print a newline at the end
