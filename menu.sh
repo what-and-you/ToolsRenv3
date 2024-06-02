@@ -22,16 +22,12 @@ clear
 git pull
 sleep 3
 clear
-#!/bin/bash
 
-text="This is slow-motion text!"
+text="This is text displayed one character at a time!"
 
-# Define delay between characters (adjust for desired speed)
-delay=3s
-
-for char in [[ "$text" ]]; do
-  echo -n "$char"
-  sleep "$delay"
+for (( i=0; i < ${#text}; i++ )); do
+  echo -n "${text:i:1}"
+  sleep 0.1 # Adjust delay for desired speed
 done
 
 echo  # Print a newline at the end
