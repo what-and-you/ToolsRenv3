@@ -4,7 +4,7 @@ read -p ""
 git pull
 clear
 # Get the current username
-CURRENT_USER=$(whoami)
+read -p" CURRENT_USER=$(whoami)"
 sleep 1
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
