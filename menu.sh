@@ -73,8 +73,7 @@ echo "\x1B[32m
 ||FOLLOW                                 ||
 ||< bug> laporkan bug                    ||
 ||< 0 > EXIT                             ||
-||< info > info update                   ||
-||=======================================||"
+||< info > info update                   ||"
 echo "||=======================================||"
 # Get the current date and time
 CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
