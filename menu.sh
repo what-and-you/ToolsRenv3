@@ -638,3 +638,7 @@ git clone https://github.com/BOY122333/info.git
 cd info
 bash info.sh
 fi
+
+echo "pilih yg ada di menu aja kontol: '$1'"
+  echo "pilih yg ada di menu aja kontol:"
+ 
