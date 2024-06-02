@@ -27,6 +27,7 @@ clear
 current_hour=$(date +%H)
 
 # Choose greeting based on time of day
+sleep 5
 if [ $current_hour -lt 12 ]; then
   greeting="Selamat Pagi"
 elif [ $current_hour -le 16 ]; then
@@ -123,8 +124,8 @@ DATE=$(echo $CURRENT_DATE_TIME | cut -d" " -f1)
 TIME=$(echo $CURRENT_DATE_TIME | cut -d" " -f2)
 
 # Display the date and time separately
-echo "||Tanggal: $DATE                    ||"
-echo "||Waktu: $TIME                        ||"
+echo "||[+]Tanggal: $DATE                    ||"
+echo "||[+]Waktu: $TIME                        ||"
 echo "||=======================================||"
 echo
 read -p "                PILIH MENU:" ren9999
