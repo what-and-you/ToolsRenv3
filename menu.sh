@@ -1,3 +1,4 @@
+clear
 git pull
 clear
 sleep 1
