@@ -1,4 +1,39 @@
 clear
+# Continue loop until Enter is pressed
+while true; do
+  # Display message and prompt for input
+  echo "Tekan Enter untuk melanjutkan..."
+  read -r -p ""
+  sleep 2
+
+  # Check if the user pressed Enter
+  if [[ $REPLY == "" ]]; then
+    # Break out of the loop if Enter is pressed
+    break
+  fi
+done
+
+# Continue script execution after 5 seconds
+echo "Anda telah menekan Enter. Script dilanjutkan..."
+sleep 3
+# Perform additional actions here (if any)
+# ...
+clear
+echo "sedang memeriksa update"
+sleep 3
+clear
+git pull
+sleep 3
+clear
+
+text="This is text displayed one character at a time!"
+
+for (( i=0; i < ${#text}; i++ )); do
+  echo -n "${text:i:1}"
+  sleep 0.1s# Adjust delay for desired speed
+done
+
+sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
 echo -e   "\x1B[31m░░░██║░░░██║░░██║██║░░██║██║░░░░░╚█████╗░██████╔╝█████╗░░██╔██╗██║"
