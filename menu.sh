@@ -4,7 +4,6 @@ while true; do
   # Display message and prompt for input
   echo "Tekan Enter untuk melanjutkan..."
   read -r -p ""
-  sleep 2
 
   # Check if the user pressed Enter
   if [[ $REPLY == "" ]]; then
@@ -13,11 +12,9 @@ while true; do
   fi
 done
 
-# Continue script execution after 5 seconds
+# Continue script execution after Enter is pressed
 echo "Anda telah menekan Enter. Script dilanjutkan..."
 sleep 3
-# Perform additional actions here (if any)
-# ...
 clear
 echo "sedang memeriksa update"
 sleep 3
@@ -25,7 +22,6 @@ clear
 git pull
 sleep 3
 clear
-
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
