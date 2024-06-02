@@ -14,16 +14,7 @@ echo
 echo
 echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳2̳"
 echo -e "                            By: REN9999��☕"
-
-
-# Get the current date and time
-echo "||==================================================||"
-CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
-# Display the formatted date and time
-echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
-echo "||==================================================||"
-
-echo -e"
+echo "
 ||=======================================||
 ||        WELCOME TO TOOLSRENv2          ||
 ||=======================================||
@@ -82,6 +73,12 @@ echo -e"
 ||FOLLOW                                 ||
 ||< bug> laporkan bug                    ||
 ||< 0 > EXIT                             ||
+# Get the current date and time
+echo "||=======================================||"
+CURRENT_DATE_TIME=$(date +"%Y-%m-%d %H:%M:%S")
+# Display the formatted date and time
+echo "Tanggal dan Waktu Saat Ini: $CURRENT_DATE_TIME"
+echo "||==================================================||"
 ||< info > info update                   ||
 ||=======================================||
 "
