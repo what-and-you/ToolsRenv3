@@ -22,6 +22,20 @@ clear
 git pull
 sleep 5
 clear
+# Text to print slowly
+text="SELAMAT DATANG DI TOOLSRENV2"
+
+# Loop through each character in the text
+for char in "${text[@]}"; do
+  # Print the character
+  echo -n "$char"
+
+  # Delay between characters (adjust as desired)
+  sleep 0.1
+done
+
+# Print a newline after the text
+echo
 clear
 sleep 2
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
