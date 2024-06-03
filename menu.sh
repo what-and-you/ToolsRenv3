@@ -2,6 +2,23 @@ clear
 git pull
 clear
 
+#!/bin/bash
+
+# Get a list of all logged-in users
+users=$(who | awk '{print $1}')
+
+# Display a header message
+echo "Current Logged-in Users:"
+
+# Print each username on a separate line
+echo "$users" | tr '\n' ' '
+
+# Add a separator before entering the Tools section
+echo
+echo "*** Entering Tools Section ***"
+sleep 3
+clear
+
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
@@ -13,32 +30,6 @@ elif [ $current_hour -lt 18 ]; then
 else
   echo "selamat sore ☺"
 fi
-sleep 4
-clear
-echo " \ "
-sleep 2
-clear
-echo "—"
-sleep 2
-clear
-echo "/"
-sleep 2
-clear
-echo "|"
-sleep 2
-clear
-echo "/"
-sleep 2
-clear
-echo "—"
-sleep 2
-clear
-echo "/"
-sleep 2
-clear
-echo "|"
-sleep 2
-clear
 
 # Continue loop until Enter is pressed
 while true; do
@@ -77,7 +68,7 @@ echo -e   "\x1B[37m░░░██║░░░╚█████╔╝╚██�
 echo -e   "\x1B[37m░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝"
 echo
 echo
-echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳2̳"
+echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳3"
 echo -e "                            By: REN9999��☕"
 echo -e " \x1B[32m
 ||=======================================||
