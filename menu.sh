@@ -23,21 +23,6 @@ frames=( '|' '/' '-' '\' '|' '/' '-' '\' )
 spinner_speed=0.15
 
 # Clear the screen
-clear
-
-# Display the spinner animation
-while : do
-    for frame in "${frames[@]}"; do
-        echo -ne "\r$frame"
-        sleep $spinner_speed
-    done
-done &
-
-# Run your script here (replace 'your_script.sh' with the actual script path)
-./your_script.sh
-
-# Kill the spinner process after the script finishes
-kill %1
  sleep 4
  clear
  
