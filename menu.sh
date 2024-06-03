@@ -16,18 +16,23 @@ fi
 sleep 4
 clear
 
-#ine the spinner animation frames
-function show_loading() {
-local x=0
-local delay=0.1
-local spin_chars="-\|/"
-local spin_length=${#spin_chars}
+# Define spin characters
+spin="-\|/"
+
+i=0
 while true; do
-local char=${spin_chars:x++%spin_length:1}
-printf '\r%s' "Installing Package  $char"
-sleep $delay
-done
-}
+  echo -ne "\b$spin[$i]"
+  i=$(( (i + 1) % ${#spin} ))  # Rotate character index
+  sleep 0.1
+done &  # Run in background
+
+# Your script goes here (replace with your actual commands)
+sleep 2  # Simulate script execution time
+
+# Terminate spinner after script finishes
+kill %1
+
+echo  # Print newline after animation
  clear
  sleep 4
 # Continue loop until Enter is pressed
