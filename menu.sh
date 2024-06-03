@@ -15,6 +15,25 @@ else
 fi
 sleep 4
 clear
+#!/bin/bash
+
+# Define loading symbols
+symbols=( "|" "/" "-" "\\" )
+
+# Set animation speed (seconds per symbol)
+animation_speed=0.1
+
+while true; do
+  # Clear the screen before displaying the next symbol
+  clear
+
+  # Iterate through the loading symbols array
+  for symbol in "${symbols[@]}"; do
+    echo -e "Loading... $symbol"
+    sleep $animation_speed
+  done
+done
+
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
