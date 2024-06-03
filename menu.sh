@@ -1,5 +1,6 @@
 clear
-sleep 1
+git pull
+sleep 0.1
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
