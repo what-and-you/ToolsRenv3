@@ -1,18 +1,16 @@
 clear
 git pull
 clear
-exit
-bash menu.sh
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
 # Periksa apakah sekarang malam, siang, atau pagi
 if [ $current_hour -lt 6 ]; then
-  echo "selamat malam ☺"
+  echo "Halo...selamat malam ☺"
 elif [ $current_hour -lt 18 ]; then
-  echo "selamat siang ☺"
+  echo "Halo...selamat siang ☺"
 else
-  echo "selamat sore ☺"
+  echo "Halo...selamat sore ☺"
 fi
 sleep 3
 clear
