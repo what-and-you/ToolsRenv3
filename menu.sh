@@ -6,7 +6,7 @@ clear
 current_user=$(whoami)
 
 # Display the username
-echo "The current user running the script is: $current_user"
+echo -p"The current user running the script is: $current_user"
 
 
 # Dapatkan jam saat ini
