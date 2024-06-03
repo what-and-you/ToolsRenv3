@@ -14,7 +14,7 @@ else
   echo "selamat sore ☺"
 fi
 sleep 3
-ear
+clear
 
 # Continue loop until Enter is pressed
 while true; do
