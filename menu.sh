@@ -2,21 +2,6 @@ clear
 git pull
 clear
 
-# Get a list of all logged-in users
-users=$(who | awk '{print $1}')
-
-# Display a header message
-echo "Current Logged-in Users:"
-
-# Print each username on a separate line
-echo "$users" | tr '\n' ' '
-
-# Add a separator before entering the Tools section
-echo
-echo "*** Entering Tools Section ***"
-sleep 3
-clear
-
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
@@ -28,6 +13,8 @@ elif [ $current_hour -lt 18 ]; then
 else
   echo "selamat sore ☺"
 fi
+sleep 3
+ear
 
 # Continue loop until Enter is pressed
 while true; do
