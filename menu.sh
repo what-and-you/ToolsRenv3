@@ -6,11 +6,11 @@ current_hour=$(date +%H)
 
 # Periksa apakah sekarang malam, siang, atau pagi
 if [ $current_hour -lt 6 ]; then
-  echo "Saat ini malam"
+  echo "selamat malam☺"
 elif [ $current_hour -lt 18 ]; then
-  echo "Saat ini siang"
+  echo "selamat siang☺"
 else
-  echo "Saat ini malam"
+  echo "selamat malam☺"
 fi
 sleep 4
 clear
