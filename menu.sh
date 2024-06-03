@@ -2,13 +2,6 @@ clear
 #!/bin/bash
 #!/bin/bash
 
-# Get the current user's username
-current_user=$(whoami)
-
-# Display the username
-echo -p"The current user running the script is: $current_user"
-
-
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
