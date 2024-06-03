@@ -1,5 +1,18 @@
-echo "SELAMAT DATANG DI TOOLSRENV2"
-sleep 3
+clear
+#!/bin/bash
+
+# Dapatkan jam saat ini
+current_hour=$(date +%H)
+
+# Periksa apakah sekarang malam, siang, atau pagi
+if [ $current_hour -lt 6 ]; then
+  echo "Saat ini malam"
+elif [ $current_hour -lt 18 ]; then
+  echo "Saat ini siang"
+else
+  echo "Saat ini malam"
+fi
+sleep 4
 clear
 # Continue loop until Enter is pressed
 while true; do
@@ -24,7 +37,10 @@ clear
 git pull
 sleep 3
 clear
-echo "SELAMAT DATANG DI TOOLSRENV2"
+echo "SELAMAT DATANG DI TOOLSRENV2☺"
+sleep 5
+clear
+echo "kalo ada bug langsung chat saya aja👍"
 sleep 3
 clear
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
