@@ -15,20 +15,23 @@ else
 fi
 sleep 4
 clear
-
-function show_loading() {
-local x=0
-local delay=0.1
-local spin_chars="-\|/"
-local spin_length=${#spin_chars}
-while true; do
-local char=${spin_chars:x++%spin_length:1}
-printf '\r%s' "HOZOO PROJECTS $char"
-sleep $delay
-done
-}
-sleep 2
+echo "\"
 clear
+echo "—"
+clear
+echo "/"
+clear
+echo "|"
+clear
+echo "/"
+clear
+echo "—"
+clear
+echo "/"
+clear
+echo "|"
+clear
+echo "
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
