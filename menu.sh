@@ -2,8 +2,6 @@ clear
 git pull
 clear
 
-#!/bin/bash
-
 # Get a list of all logged-in users
 users=$(who | awk '{print $1}')
 
