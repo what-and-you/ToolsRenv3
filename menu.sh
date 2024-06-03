@@ -1,17 +1,15 @@
 clear
-#!/bin/bash
-#!/bin/bash
-
+sleep 1
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
 # Periksa apakah sekarang malam, siang, atau pagi
 if [ $current_hour -lt 6 ]; then
-  echo "selamat malam $username☺"
+  echo "selamat malam ☺"
 elif [ $current_hour -lt 18 ]; then
-  echo "selamat siang $username☺"
+  echo "selamat siang ☺"
 else
-  echo "selamat malam $username☺"
+  echo "selamat sore ☺"
 fi
 sleep 4
 clear
