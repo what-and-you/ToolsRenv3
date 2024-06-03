@@ -17,13 +17,17 @@ sleep 4
 clear
 
 #ine the spinner animation frames
-frames=( '|' '/' '-' '\' '|' '/' '-' '\' )
-
-# Set the spinner speed (in seconds)
-spinner_speed=0.15
-
-# Clear the screen
- sleep 4
+function show_loading() {
+local x=0
+local delay=0.1
+local spin_chars="-\|/"
+local spin_length=${#spin_chars}
+while true; do
+local char=${spin_chars:x++%spin_length:1}
+printf '\r%s' "Installing Package  $char"
+sleep $delay
+done
+}
  clear
  
 # Continue loop until Enter is pressed
