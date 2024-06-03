@@ -41,7 +41,7 @@ echo "SELAMAT DATANG DI TOOLSRENV2☺"
 sleep 5
 clear
 echo "kalo ada bug langsung chat saya aja👍"
-sleep 3
+sleep 6
 clear
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
