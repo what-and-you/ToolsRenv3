@@ -55,7 +55,7 @@ echo
 echo
 echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳3"
 echo -e "                            By: REN9999��☕"
-echo -e " \e[38;2;0;255;0m
+echo -e " ${green}This is ${red}green${yellow} and ${green}red${purple}
 ||=======================================||
 ||        WELCOME TO TOOLSRENv2          ||
 ||=======================================||
