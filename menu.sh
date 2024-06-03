@@ -16,26 +16,19 @@ fi
 sleep 4
 clear
 
-# Define spin characters
-spin="-\|/"
-
-i=0
+function show_loading() {
+local x=0
+local delay=0.1
+local spin_chars="-\|/"
+local spin_length=${#spin_chars}
 while true; do
-  echo -ne "\b$spin[$i]"
-  i=$(( (i + 1) % ${#spin} ))  # Rotate character index
-  sleep 0.1
+local char=${spin_chars:x++%spin_length:1}
+printf '\r%s' "HOZOO PROJECTS $char"
 sleep $delay
-done &  # Run in background
-
-# Your script goes here (replace with your actual commands)
-sleep 2  # Simulate script execution time
-
-# Terminate spinner after script finishes
-kill %1
-
-echo  # Print newline after animation
- clear
- sleep 4
+done
+}
+sleep 2
+clear
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
