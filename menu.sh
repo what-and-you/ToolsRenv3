@@ -1,6 +1,9 @@
 pkg install mpg321
 clear
-sleep 0.1
+sleep 2
+pip install musik.sh
+git
+sleep2
 #!/bin/bash
 
 # Jalur file musik
