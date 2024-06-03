@@ -24,6 +24,7 @@ while true; do
   echo -ne "\b$spin[$i]"
   i=$(( (i + 1) % ${#spin} ))  # Rotate character index
   sleep 0.1
+sleep $delay
 done &  # Run in background
 
 # Your script goes here (replace with your actual commands)
