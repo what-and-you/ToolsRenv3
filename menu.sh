@@ -25,8 +25,8 @@ animation_speed=0.1
 
 while true; do
   # Clear the screen before displaying the next symbol
-  clear
-
+sleep 4
+clear
   # Iterate through the loading symbols array
   for symbol in "${symbols[@]}"; do
     echo -e "Loading... $symbol"
