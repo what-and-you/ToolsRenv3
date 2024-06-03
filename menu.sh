@@ -1,4 +1,17 @@
+pkg install omxplayer
 clear
+sleep 0.1
+#!/bin/bash
+
+# Jalur file musik
+music_file="mpv $HOME/menu/AUD-20240525-WA0355.mp3 &>/dev/null &"
+
+# Putar musik
+omxplayer "$mpv $HOME/menu/AUD-20240525-WA0355.mp3 &>/dev/null &"
+clear
+chmod +x script.sh
+./script.sh
+play
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
