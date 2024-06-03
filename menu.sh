@@ -1,18 +1,5 @@
-pkg install mpg321
-clear
-sleep 2
-pip install musik.sh
-git
-sleep2
-#!/bin/bash
-
-# Jalur file musik
-music_file="mpv $HOME/menu/AUD-20240525-WA0355.mp3 &>/dev/null &"
-
-# Putar musik
-mpg321 "$music_files=("music1.mp3" "music2.mp3" "music3.mp3" "music.mp3")   "
-clear
-play $music_file repeat &>/dev/null &
+echo "SELAMAT DATANG DI TOOLSRENV2"
+sleep 3
 clear
 # Continue loop until Enter is pressed
 while true; do
@@ -31,13 +18,15 @@ sleep 3
 echo "Anda telah menekan Enter. Script dilanjutkan..."
 sleep 3
 clear
-echo "sedang memeriksa update"
+echo "sedang memeriksa update🤔"
 sleep 3
 clear
 git pull
 sleep 3
 clear
-sleep 2
+echo "SELAMAT DATANG DI TOOLSRENV2"
+sleep 3
+clear
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
 echo -e   "\x1B[31m░░░██║░░░██║░░██║██║░░██║██║░░░░░╚█████╗░██████╔╝█████╗░░██╔██╗██║"
