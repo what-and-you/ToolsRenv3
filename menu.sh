@@ -29,7 +29,7 @@ sleep $delay
 done
 }
  clear
- 
+ sleep 4
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
