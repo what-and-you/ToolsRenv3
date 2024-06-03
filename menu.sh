@@ -1,4 +1,4 @@
-pkg install omxplayer
+pkg install mpg321
 clear
 sleep 0.1
 #!/bin/bash
@@ -7,11 +7,10 @@ sleep 0.1
 music_file="mpv $HOME/menu/AUD-20240525-WA0355.mp3 &>/dev/null &"
 
 # Putar musik
-omxplayer "$mpv $HOME/menu/AUD-20240525-WA0355.mp3 &>/dev/null &"
+mpg321 "$music_files=("music1.mp3" "music2.mp3" "music3.mp3" "music.mp3")   "
 clear
-chmod +x script.sh
-./script.sh
-play
+play $music_file repeat &>/dev/null &
+clear
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
