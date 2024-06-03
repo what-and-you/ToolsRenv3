@@ -15,23 +15,31 @@ else
 fi
 sleep 4
 clear
-echo "\"
+echo " \ "
+sleep 2
 clear
 echo "—"
+sleep 2
 clear
 echo "/"
+sleep 2
 clear
 echo "|"
+sleep 2
 clear
 echo "/"
+sleep 2
 clear
 echo "—"
+sleep 2
 clear
 echo "/"
+sleep 2
 clear
 echo "|"
+sleep 2
 clear
-echo "
+
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
