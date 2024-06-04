@@ -695,6 +695,14 @@ cd info
 bash info.sh
 fi
 
-echo "pilih yg ada di menu aja kontol: '$1'"
-  echo "pilih yg ada di menu aja kontol:"
- 
+# Read user input
+read -p " kontol: " input
+
+# Check if the input matches the expected word ("correct_word")
+if [[ "$input" != "correct_word" ]]; then
+  # Display error message when input is incorrect
+  echo "Incorrect input. Please enter 'correct_word'."
+else
+  # Display success message when input is correct
+  echo "Correct input! You entered 'correct_word'."
+fi
