@@ -695,8 +695,7 @@ bash info.sh
 fi
 if [ $ren9999 ==  ]
 then
-clear
-echo "ketik yg bener goblok"
+echo "lu bijak sama gw, lu kalo ketik yg bener goblok"
 sleep 4
 bash menu.sh
 clear
