@@ -694,15 +694,11 @@ git clone https://github.com/BOY122333/info.git
 cd info
 bash info.sh
 fi
-
-# Read user input
-read -p " kontol: " input
-
-# Check if the input matches the expected word ("correct_word")
-if [[ "$input" != "correct_word" ]]; then
-  # Display error message when input is incorrect
-  echo "Incorrect input. Please enter 'correct_word'."
-else
-  # Display success message when input is correct
-  echo "Correct input! You entered 'correct_word'."
+if [ $ren9999 ==  ]
+then
+clear
+echo "ketik yg bener goblok"
+sleep 4
+bash menu.sh
+clear
 fi
