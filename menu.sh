@@ -42,7 +42,7 @@ echo "FOLLOW AKUN TIKTOK GW WAK"
 sleep 3
 clear
 xdg-open "https://www.tiktok.com/@sistem9999?_t=8mE62usv4Br&_r=1"
-sleep 6
+sleep 8
 clear
 echo "SELAMAT DATANG DI TOOLSRENV2☺"
 sleep 4
