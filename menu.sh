@@ -679,11 +679,11 @@ echo "
 ╚══════╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░
 "
 sleep 1
-echo "[*] THANKS BRO👍❗❗❗"
-sleep 1
-echo "[*] TERIMAKASIH SUDAH MENGGUNAKAN TOOLS SAYA😊😊❗❗❗"
-sleep 1
-cd
+echo "[*] THANKS BRO👍❗❗"
+sleep 2
+echo "[*] TERIMAKASIH SUDAH MENGGUNAKAN TOOLS SAYA😊😊❗❗"
+sleep 3
+clear 
 exit
 fi
 if [ $ren9999 == info ]
@@ -696,8 +696,9 @@ bash info.sh
 fi
 if [ $ren9999 ==  ]
 then
-echo "lu bijak sama gw, lu kalo ketik yg bener goblok"
-sleep 4
+echo "lu bijak sama gw, lu kalo ngetik yang bener goblok"
+sleep 2
+echo "salah ketik resiko mengurangi tools🗿"
 bash menu.sh
 clear
 fi
