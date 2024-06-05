@@ -113,8 +113,8 @@ echo -e " \e[38;2;0;255;0m
 ||43.DDOS V6                             ||
 ||44.DDOS V7                             ||
 ||=======================================||
-||UPDATE                                 ||
-||FOLLOW                                 ||
+||update                                 ||
+||follow                                 ||
 ||< bug> laporkan bug                    ||
 ||< 0 > EXIT                             ||
 ||< info > info update                   ||"
