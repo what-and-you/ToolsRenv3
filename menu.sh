@@ -642,16 +642,18 @@ https://github.com/dev-bot-team/Tiktok-Live-View-Bot.git
 cd Tiktok-Live-View-Bot
 python main.py
 fi
-if [ $ren9999 == UPDATE ]
+if [ $ren9999 == update ]
 then
 clear
 sleep 1
 git pull
-git clone https://github.com/BOY122333/ToolsRenv2.git
-cd ToolsRenv2
-bash REN.sh
+sleep 2
+echo " tekan enter untuk kembali ke menu"
+read -p " "
+bash menu.sh
+sleep 2
 fi
-if [ $ren9999 == FOLLOW ]
+if [ $ren9999 == follow ]
 then
 clear
 sleep 1
