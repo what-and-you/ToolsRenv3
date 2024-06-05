@@ -327,6 +327,7 @@ sleep 1
 pkg update && pkg upgrade
 git clone https://github.com/mohammadmahdi-termux/hackCCTV.git
 cd hackCCTV
+pip install pkg resources
 python3 hackcctv.py
 fi
 if [ $ren9999 == 19 ]
