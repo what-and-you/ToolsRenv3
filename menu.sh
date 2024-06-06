@@ -112,6 +112,7 @@ echo -e " \e[38;2;0;255;0m
 ||42.DDOS V5                             ||
 ||43.DDOS V6                             ||
 ||44.DDOS V7                             ||
+||45.DDOS V8                             ||
 ||=======================================||
 ||update                                 ||
 ||follow                                 ||
@@ -498,6 +499,16 @@ git clone https://github.com/SPOKYHOZOOO/TOOLS999
 cd TOOLS999
 chmod 777 TOOLS999
 bash TOOLS999.sh
+fi
+if [ $ren9999 == 45 ]
+then
+sleep 1
+apt-get update -y
+apt-get install git
+git clone https://github.com/Red-company/RDDoS_Tool.git
+cd RDDoS_Tool
+bash setup.sh
+python3 RDDoS_Tool.py
 fi
 if [ $ren9999 == 26 ]
 then
