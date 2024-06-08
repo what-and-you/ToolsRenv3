@@ -4,8 +4,13 @@ loading_icon="|/-\\"
 
 while true; do
   for i in "${loading_icon[@]}"; do
-    echo -en "\b$i"
+    tput civis  # Hide cursor
+    tput cup 3 10  # Move cursor to row 3, column 10
+    echo -n "$i"
     sleep 0.25
+    tput cup 3 10  # Move cursor back
+    echo -n " "  # Erase previous character
+    tput cnorm  # Show cursor
   done
 done
 clear
