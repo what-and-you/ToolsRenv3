@@ -4,12 +4,12 @@ clear
 current_hour=$(date +%H)
 
 # Periksa apakah sekarang malam, siang, atau pagi
-if [ $current_hour -lt 6 ]; then
-  echo "Halo...selamat pagi☺"
+if [ $current_hour -lt 20 ]; then
+  echo "Halo...selamat malam ☺"
 elif [ $current_hour -lt 12 ]; then
   echo "Halo...selamat siang ☺"
-else   [ $current_hour -lt 20 ]; then
-  echo "Halo...selamat malah ☺"
+else
+  echo "Halo...selamat sore ☺"
 fi
 sleep 3
 clear
