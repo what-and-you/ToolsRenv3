@@ -1,3 +1,6 @@
+git pull
+sleep 2
+clear
 sleep 2
 clear
 # Dapatkan jam saat ini
