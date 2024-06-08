@@ -40,6 +40,7 @@ read -s -p "Password: " password
 echo
 if [ "$username" == "$expected_username" ] && [ "$password" == "$expected_password" ]; then
 echo "Login berhasil"
+sleep 3
 clear
 echo "FOLLOW AKUN TIKTOK GW WAK"
 sleep 3
