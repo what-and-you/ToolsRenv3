@@ -9,6 +9,7 @@ while true; do
   done
 done
 clear
+
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
