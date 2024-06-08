@@ -20,7 +20,7 @@ clear
 # Continue loop until Enter is pressed
 while true; do
   # Display message and prompt for input
-  echo "Tekan Enter untuk melanjutkan.............."
+  echo "Tekan Enter untuk melanjutkan... "
   read -r -p ""
   
   # Check if the user pressed Enter
