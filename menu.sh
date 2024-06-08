@@ -27,6 +27,8 @@ while true; do
   fi
 done
 sleep 2
+clear
+
 echo "username dan password sama seperti yang dulu yaa😅"
 sleep 3
 verify_credentials() {
