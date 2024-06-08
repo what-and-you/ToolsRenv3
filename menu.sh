@@ -26,9 +26,34 @@ while true; do
     break
   fi
 done
+sleep 2
+echo "username dan password sama seperti yang dulu yaa😅"
 sleep 3
+verify_credentials() {
+local expected_username="REN"
+local expected_password="99999"
+while true; do
+read -p "Username: " username
+read -s -p "Password: " password
+echo
+if [ "$username" == "$expected_username" ] && [ "$password" == "$expected_password" ]; then
+echo "Login berhasil"
+clear
+echo "FOLLOW AKUN TIKTOK GW WAK"
+sleep 3
+xdg-open "https://www.tiktok.com/@sistem9999?_t=8mE62usv4Br&_r=1"
+clear
+break
+else
+echo -e "\x1B[31m Username atau password salah. Silakan coba lagi."
+xdg-open "https://wa.me/+6289519450908?text=bang ToolsRenv2 username sama password nya apa?"
+fi
+done
+}
+verify_credentials
+clear
 # Continue script execution after Enter is pressed
-echo "Anda telah menekan Enter. Script dilanjutkan..."
+echo "Anda telah memasukan username dan password. Script dilanjutkan..."
 sleep 3
 clear
 echo "sedang memeriksa update🤔"
