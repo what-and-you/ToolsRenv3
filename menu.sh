@@ -5,11 +5,11 @@ current_hour=$(date +%H)
 
 # Periksa apakah sekarang malam, siang, atau pagi
 if [ $current_hour -lt 6 ]; then
-  echo "Halo...selamat malam ☺"
-elif [ $current_hour -lt 18 ]; then
+  echo "Halo...selamat pagi☺"
+elif [ $current_hour -lt 12 ]; then
   echo "Halo...selamat siang ☺"
-else
-  echo "Halo...selamat sore ☺"
+else   [ $current_hour -lt 20 ]; then
+  echo "Halo...selamat malah ☺"
 fi
 sleep 3
 clear
@@ -27,36 +27,8 @@ while true; do
   fi
 done
 sleep 2
-clear
-
-echo "username dan password sama seperti yang dulu yaa😅"
-sleep 3
-verify_credentials() {
-local expected_username="REN"
-local expected_password="99999"
-while true; do
-read -p "Username: " username
-read -s -p "Password: " password
-echo
-if [ "$username" == "$expected_username" ] && [ "$password" == "$expected_password" ]; then
-echo "Login berhasil"
-sleep 3
-clear
-echo "FOLLOW AKUN TIKTOK GW WAK"
-sleep 3
-xdg-open "https://www.tiktok.com/@sistem9999?_t=8mE62usv4Br&_r=1"
-clear
-break
-else
-echo -e "\x1B[31m Username atau password salah. Silakan coba lagi."
-xdg-open "https://wa.me/+6289519450908?text=bang ToolsRenv2 username sama password nya apa?"
-fi
-done
-}
-verify_credentials
-clear
 # Continue script execution after Enter is pressed
-echo "Anda telah memasukan username dan password. Script dilanjutkan..."
+echo "Anda telah tekan enter. Script dilanjutkan..."
 sleep 3
 clear
 echo "sedang memeriksa update🤔"
