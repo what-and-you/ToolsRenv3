@@ -63,7 +63,10 @@ echo "sedang memeriksa update🤔"
 sleep 3
 clear
 git pull
-sleep 3
+sleep 2
+clear
+echo "kalo mau liat update terbaru silahkan run ulang❗❗❗"
+sleep 4
 clear
 echo "FOLLOW AKUN TIKTOK GW WAK"
 sleep 3
