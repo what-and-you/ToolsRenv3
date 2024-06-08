@@ -1,5 +1,14 @@
 sleep 2
 clear
+loading_icon="|/-\\"
+
+while true; do
+  for i in "${loading_icon[@]}"; do
+    echo -en "\b$i"
+    sleep 0.25
+  done
+done
+clear
 # Dapatkan jam saat ini
 current_hour=$(date +%H)
 
